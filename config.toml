@@ -1,0 +1,9 @@
+# Tema visual del dashboard Superstore (LAD3012)
+# Este archivo controla los colores base de Streamlit. Súbelo al repo
+# DENTRO de una carpeta llamada .streamlit/  (ruta: .streamlit/config.toml)
+[theme]
+primaryColor        = "#1E2761"
+backgroundColor     = "#FFFFFF"
+secondaryBackgroundColor = "#F4F6FA"
+textColor           = "#1A1D29"
+font                = "sans serif"
