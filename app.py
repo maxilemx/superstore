@@ -20,8 +20,8 @@ st.set_page_config(
 # ============================================================
 # PASO 1 — CAMBIA ESTAS DOS LINEAS ANTES DE SUBIR A GITHUB
 # ============================================================
-TU_NOMBRE = "Tu Nombre Aqui"
-TU_ID     = "000000"
+TU_NOMBRE = "Máximo Galván Galindo"
+TU_ID     = "182484"
 
 # ============================================================
 # PASO 2 — DEJA ESTO COMO ESTA. NO LO CAMBIES TODAVIA.
