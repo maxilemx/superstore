@@ -37,19 +37,22 @@ TU_ID     = "182484"
 # INSIGHT DE NEGOCIO (hallazgo + recomendación)
 # ============================================================
 TU_INSIGHT = """
-El descuento es el principal destructor de utilidad de la tienda.
-Las líneas con descuento mayor a 20% —apenas el 14% del total— acumulan cerca de
-**−$135,000**, casi un tercio de lo que gana el resto del negocio, y arriba de ese
-umbral más de 9 de cada 10 órdenes pierden dinero. La evidencia geográfica lo
-confirma: los 10 estados donde más se descuenta (Texas, Illinois, Ohio…) operan
-**todos** en números rojos, mientras que los estados con descuento bajo promedian
-+27% de margen. A nivel de producto, **Muebles** vende casi tanto como las demás
-categorías pero deja un margen de apenas ~3%.
+Al principio pensé que el problema iban a ser las ventas, así que lo
+primero que hice fue filtrar las ventas con pérdida (las que tienen Profit negativo)
+y me saqué de onda: casi la mitad de las líneas están en rojo. Ahí caché que la
+tienda vende bien, pero casi no le queda ganancia, apenas un 3% de margen. Para
+encontrar el porqué agrupé los datos por nivel de descuento y por
+categoría, y a mover los filtros de región y estado para ir comparando. Así salió
+el culpable: los descuentos. Las órdenes con más de 20% de descuento, que son como
+el 38% de todas, en lugar de dejar dinero le restan alrededor de $90,000 a la
+utilidad; básicamente las estamos regalando. Y el patrón se repite por todos lados:
+la categoría de Muebles acaba con margen negativo, y en el mapa los estados que más
+descuentan son justo los que salen en rojo.
 
-**Recomendación.** Fijar un tope de descuento de 20% (con autorización gerencial
-para excepciones) y revisar el precio de la categoría Muebles. Recuperar la mitad
-de esa pérdida elevaría la utilidad total **cerca de 24%** sin vender una sola
-unidad más.
+Por eso mi recomendación sería ponerle un tope de 20% al descuento y que cualquier
+cosa por encima la tenga que autorizar un gerente. Nada más con dejar de regalar
+margen en esas órdenes, la ganancia de la tienda subiría bastante sin necesidad de
+vender una sola unidad más.
 """
 
 # ============================================================
